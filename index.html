@@ -3,11 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="assets/gameico.png">
+    <title>Play with Boni</title>
 </head>
 <body>
-    <section>
-    <h1>Chose a user name</h1>
+
+    <!-- Step 1 -->
+
+    <section class="main" id="main">
+    <div class="main__user">
+    <h1 class="titleusername">Chose a user name</h1>
+    <input class="form__input" maxlength="10" placeholder="username" required>
+    <button type="button" class="enterButton" id="startButton"> Enter! </button>
+    </div>
+    <div class="main__scores">
+        <h2>User Scores</h2>
+        <p class="names">Mark</p>
+        <p class="markScore">clicks</p>
+        <p class="names">Alex</p>
+        <p class="markScore">clicks</p>
+        <p class="names">Ana</p>
+        <p class="markScore">clicks</p>
+        <p class="names">Andrew</p>
+        <p class="markScore">clicks</p>
+    </div>
     </section> 
+
+    <!-- Step 2 -->
+
+    <section class="startGame hidden" id="startGame">
+        <div class="startGame__game">
+            <button type="button" class="startButton" id="startGameButton">Start game!</button>
+        </div>
+        <div class="main__scores">
+            <h2>User Scores</h2>
+            <p class="names">Mark</p>
+            <p id="markScore">clicks</p>
+            <p class="names">Alex</p>
+            <p id="markScore">clicks</p>
+            <p class="names">Ana</p>
+            <p id="markScore">clicks</p>
+            <p class="names">Andrew</p>
+            <p id="markScore">clicks</p>
+        </div>
+    </section>
+
+    <!-- Step 3 -->
+
+    <section class="game hidden" id="game">
+        <div class="game__click">
+            <button type="button" class="clickButton" id="gameButton">Click here!</button>
+        </div>
+        <div class="main__scores">
+            <h2>User Scores</h2>
+            <p class="names">Mark</p>
+            <p id="markScore">clicks</p>
+            <p class="names">Alex</p>
+            <p id="markScore">clicks</p>
+            <p class="names">Ana</p>
+            <p id="markScore">clicks</p>
+            <p class="names">Andrew</p>
+            <p id="markScore">clicks</p>
+        </div>
+    </section>
+
+    <!-- Step 4 -->
+
+    <section class="finalScore hidden" id="finalScore">
+        <div class="finalScore__yourScore">
+            <h1 class="titleusername">Your score</h1>
+            <p class="time"></p>
+            <p class="clicks"></p>
+            <button type="button" class="finalButton" id="backButton">Play again!</button>
+        </div>
+        <div class="main__scores">
+            <h2>User Scores</h2>
+            <p class="names">Mark</p>
+            <p id="markScore">clicks</p>
+            <p class="names">Alex</p>
+            <p id="markScore">clicks</p>
+            <p class="names">Ana</p>
+            <p id="markScore">clicks</p>
+            <p class="names">Andrew</p>
+            <p id="markScore">clicks</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
